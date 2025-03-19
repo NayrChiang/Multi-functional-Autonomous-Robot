@@ -1,11 +1,4 @@
-# Multi-functional-Autonomous-Robot
-to be completed
-## Heading 2
-text
-
-
-# Testing
-# 🤖 MEAM5100 Final Project - Autonomous Competition Robot
+# 🤖 Multi-functional-Autonomous-Robot
 
 ## 🏆 Project Overview  
 This project was developed as part of the MEAM5100 course at the University of Pennsylvania. The objective was to build an autonomous robot capable of **detecting and interacting with various objects** in a competitive environment. The robot was designed to **identify and transport trophies, push obstacles, and navigate autonomously** using a combination of **sensor fusion, motor control, and computer vision**.
