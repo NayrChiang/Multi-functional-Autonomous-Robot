@@ -36,7 +36,7 @@ This project was developed as part of the MEAM5100 course at the University of P
 - **MG996 Servo Motors** (Gripper System)  
 - **Custom 2-Layer Chassis** (Optimized for Stability & Space Utilization)  
 
-- ### **💻 Software Architecture**
+### **💻 Software Architecture**
 - **Autonomous Robot (Main System)** - Integrates all modules for fully autonomous operation  
 - **ESPNow & UDP Communication (Wireless Module)** - Enables real-time data exchange  
 - **HTML Web Interface (Remote Control Module)** - Allows manual control and debugging  
