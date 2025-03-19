@@ -36,25 +36,26 @@ This project was developed as part of the MEAM5100 course at the University of P
 - **MG996 Servo Motors** (Gripper System)  
 - **Custom 2-Layer Chassis** (Optimized for Stability & Space Utilization)  
 
-### **💻 Software & Algorithms**
-- **C++ (Arduino)** - Microcontroller Programming  
-- **PID Controller** - Motor Speed Control  
-- **ESPNow & UDP Communication** - Wireless Data Exchange  
-- **HTML Web Interface** - Remote Robot Control  
-- **Vive Sensor Data Processing** - Object Localization  
-- **TOF Sensor Calibration** - Wall-Following Algorithm  
+- ### **💻 Software Architecture**
+- **Autonomous Robot (Main System)** - Integrates all modules for fully autonomous operation  
+- **ESPNow & UDP Communication (Wireless Module)** - Enables real-time data exchange  
+- **HTML Web Interface (Remote Control Module)** - Allows manual control and debugging  
+- **IR Sensing & Signal Processing (Object Detection Module)** - Identifies beacons and trophies  
+- **PID Controller (Motor Control Module)** - Ensures precise speed and movement control  
+- **TOF Sensor Calibration (Wall-Following Module)** - Ensures smooth obstacle avoidance  
+- **Vive Sensor Data Processing (Localization Module)** - Tracks robot position for navigation  
+
+
+
+
 
 ---
 
 ## 📂 Project Structure  
 ```bash
 MEAM5100-Competition-Robot/
-│── docs/             # Reports, schematics, and diagrams
-│── firmware/         # Arduino/ESP32 Code for robot control
-│── hardware/         # CAD models, PCB designs
-│── software/         # Python/C++ scripts for simulation & analysis
-│── tests/            # Test scripts and performance logs
-│── LICENSE           # Open-source license
+│── docs/             # Reports, schematics, and datasheets
+│── code/             # Arduino/ESP32 Code for robot control
+│── cad models/       # CAD models
 │── README.md         # Main project description
-│── CONTRIBUTING.md   # How to contribute
 │── .gitignore        # Ignored files
