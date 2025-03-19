@@ -1,8 +1,5 @@
 // ESPNow Parameters
 #define CHANNEL 0                  // channel can be 1 to 14, channel 0 means current channel.  
-// #define MAC_RECV  {0xa0,0x76,0x4e,0x19,0xea,0x2c} // receiver MAC address (last digit should be even for STA)
-// Ryan Mac Address
-// #define MAC_RECV  {0x68,0x67,0x25,0x82,0x3F,0x8C}
 #define MAC_RECV  {0x60,0x55,0xF9,0x57,0x47,0x4C}
 esp_now_peer_info_t peer1 = 
 {
