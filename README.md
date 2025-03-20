@@ -52,7 +52,7 @@ The robot was designed to:
 ```
 
 ## 🔗 References & Resources
-- **[Final Report (PDF)](docs/MEAM5100 Final Report.pdf)**
+- **[Final Report (PDF)](https://github.com/Starfishtuna/Multi-functional-Autonomous-Robot/blob/ab96b983ff3665691ee842dd8c50d9c9f5aa7c35/docs/MEAM5100%20Final%20Report.pdf)**
 - **[Video Demonstrations - Wall Following](https://youtu.be/YIY6aNa_LFA)**
 - **[Video Demonstrations - Beacon Tracking](https://youtu.be/LpJzdycJREA)**
 - **[Video Demonstrations - Police Car Tracking](https://youtu.be/CTSYHR0mnvY)**
