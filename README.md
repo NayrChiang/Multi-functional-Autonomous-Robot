@@ -52,7 +52,7 @@ The robot was designed to:
 ```
 
 ## 🔗 References & Resources
-- **[Final Report (PDF)](docs/MEAM5100_Final_Report.pdf)**
+- **[Final Report (PDF)](docs/MEAM5100 Final Report.pdf)**
 - **[Video Demonstrations - Wall Following](https://youtu.be/YIY6aNa_LFA)**
 - **[Video Demonstrations - Beacon Tracking](https://youtu.be/LpJzdycJREA)**
 - **[Video Demonstrations - Police Car Tracking](https://youtu.be/CTSYHR0mnvY)**
