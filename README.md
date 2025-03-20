@@ -1,4 +1,4 @@
-# 🚀 MEAM5100 Autonomous Robot Project
+# 🚀 MEAM5100 Multi-Functional Autonomous Robot
 
 ## 🏆 Overview
 This project was developed as part of the **MEAM5100 - Design of Mechatronic Systems** course at the **University of Pennsylvania**. The goal was to design, build, and program an autonomous robot capable of competing in a structured game environment. The robot successfully completed navigation tasks, object detection, and interaction with game elements such as trophies and a police car.
