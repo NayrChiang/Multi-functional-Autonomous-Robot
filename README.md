@@ -1,61 +1,67 @@
-# Multi-functional-Autonomous-Robot
-to be completed
-## Heading 2
-text
+# 🚀 MEAM5100 Autonomous Robot Project
 
+## 🏆 Overview
+This project was developed as part of the **MEAM5100 - Design of Mechatronic Systems** course at the **University of Pennsylvania**. The goal was to design, build, and program an autonomous robot capable of competing in a structured game environment. The robot successfully completed navigation tasks, object detection, and interaction with game elements such as trophies and a police car.
 
-# Testing
-# 🤖 MEAM5100 Final Project - Autonomous Competition Robot
+## 🎯 Project Goals
+The robot was designed to:
+- **Identify and transport a real trophy** while pushing a fake trophy to the opponent's side.
+- **Push a police car into the opponent's zone** to reduce their score.
+- **Use infrared (IR) and Time-of-Flight (TOF) sensors** for precise object detection and wall following.
+- **Implement real-time localization** using a Vive tracking system.
+- **Utilize wireless communication** (ESP-NOW and UDP) for real-time position updates.
 
-## 🏆 Project Overview  
-This project was developed as part of the MEAM5100 course at the University of Pennsylvania. The objective was to build an autonomous robot capable of **detecting and interacting with various objects** in a competitive environment. The robot was designed to **identify and transport trophies, push obstacles, and navigate autonomously** using a combination of **sensor fusion, motor control, and computer vision**.
+## 🛠 System Architecture
+### 🔧 **Mechanical System**
+- Differential drive system for stability and control.
+- Reinforced chassis to handle object interactions.
 
----
+### ⚡ **Electrical System**
+- **ESP32-WROOM** as the primary microcontroller.
+- **IR phototransistors and TOF sensors** for object detection and wall following.
+- **L298N motor driver** to control dual DC motors.
+- **Vive tracking sensor** for absolute positioning.
 
-## 🔥 Key Features  
-✔️ **Trophy Sensing & Classification** (Real vs. Fake) using **IR Sensors**  
-✔️ **Wall Following** using **Time-of-Flight (TOF) Sensors**  
-✔️ **Autonomous Object Transport** (Trophy & Police Car Handling)  
-✔️ **Precision Motor Control** with **Encoders & PID**  
-✔️ **Beacon Tracking** via **Infrared Phototransistors**  
-✔️ **Position Estimation & Navigation** with **Vive Sensor & UDP Communication**  
-✔️ **ESP32 WROOM-Based Controller** with **Wireless Communication (ESPNow + UDP)**  
+### 💻 **Software & Control**
+- **State machine-based control system** to prioritize tasks.
+- **PID control for motor speed regulation**.
+- **ESP-NOW & UDP communication** for real-time data exchange.
+- **HTML-based web interface** for manual debugging and testing.
 
----
+## 📊 Key Results & Performance
+- Successfully completed **trophy detection and retrieval** within 2.5 meters.
+- **Police car push was successful in 80% of trials**, with minor misalignment corrections.
+- **Wall-following algorithm achieved a deviation of less than 5 cm**.
+- **Wireless communication maintained a stable update rate**, though packet loss occurred in high-interference environments.
 
-## 🛠️ Technologies & Components Used  
+## 🔮 Future Improvements
+- **Adaptive PID tuning** to correct minor trajectory drift over long distances.
+- **Kalman filtering for Vive tracking** to reduce jitter in position data.
+- **Improved IR sensor shielding** to minimize interference from ambient light.
+- **Redundant message handling for ESP-NOW** to improve data reliability.
 
-### **🔌 Hardware Components**
-- **ESP32-WROOM** (Main MCU)  
-- **4S Lipo Battery** (Power Supply)  
-- **Motor-Wheel Set** (Upgraded for high torque)  
-- **L298n Motor Driver**  
-- **VL53L0X TOF Sensors** (Wall Following)  
-- **TLV272 Op-Amps** (IR Signal Processing)  
-- **PD70-01C Infrared Photodiode** (Beacon Tracking)  
-- **MG996 Servo Motors** (Gripper System)  
-- **Custom 2-Layer Chassis** (Optimized for Stability & Space Utilization)  
+## 📁 Repository Structure
+```
+📂 MEAM5100-Project
+│── 📂 docs/               # Contains final report and project schematics
+│── 📂 code/               # All Arduino/ESP32 source code
+│── 📂 hardware/           # CAD models, mechanical drawings
+│── README.md              # Project overview, setup, and instructions
+│── LICENSE                # Open-source license (MIT recommended)
+│── .gitignore             # Ignore unnecessary files (build files, logs)
+```
 
-- ### **💻 Software Architecture**
-- **Autonomous Robot (Main System)** - Integrates all modules for fully autonomous operation  
-- **ESPNow & UDP Communication (Wireless Module)** - Enables real-time data exchange  
-- **HTML Web Interface (Remote Control Module)** - Allows manual control and debugging  
-- **IR Sensing & Signal Processing (Object Detection Module)** - Identifies beacons and trophies  
-- **PID Controller (Motor Control Module)** - Ensures precise speed and movement control  
-- **TOF Sensor Calibration (Wall-Following Module)** - Ensures smooth obstacle avoidance  
-- **Vive Sensor Data Processing (Localization Module)** - Tracks robot position for navigation  
+## 🔗 References & Resources
+- **[Final Report (PDF)](docs/MEAM5100_Final_Report.pdf)**
+- **[Video Demonstrations - Wall Following](https://youtu.be/YIY6aNa_LFA)**
+- **[Video Demonstrations - Beacon Tracking](https://youtu.be/LpJzdycJREA)**
+- **[Video Demonstrations - Police Car Tracking](https://youtu.be/CTSYHR0mnvY)**
 
+## 👥 Team Members
+- **Chen Hsin Chiang**
+- **Xiangyu Han**
+- **Yipeng Zhang**
 
+## 📜 License
+This project is not licensed for public use. Redistribution, modification, or usage of any part of this project is not permitted without explicit authorization from the team.
 
-
-
----
-
-## 📂 Project Structure  
-```bash
-MEAM5100-Competition-Robot/
-│── docs/             # Reports, schematics, and datasheets
-│── code/             # Arduino/ESP32 Code for robot control
-│── cad models/       # CAD models
-│── README.md         # Main project description
-│── .gitignore        # Ignored files
