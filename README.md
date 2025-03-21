@@ -46,8 +46,8 @@ The robot was designed to:
 │── 📂 docs/               # Contains final report and project schematics
 │── 📂 code/               # All Arduino/ESP32 source code
 │── 📂 hardware/           # CAD models, mechanical drawings
-│── README.md              # Project overview, setup, and instructions
-│── LICENSE                # Open-source license (MIT recommended)
+│── README.md              # Project overview, discussion, and results
+│── LICENSE                # Not licensed
 │── .gitignore             # Ignore unnecessary files (build files, logs)
 ```
 
